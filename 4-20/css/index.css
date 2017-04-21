@@ -1,0 +1,139 @@
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+	margin: 0;
+	padding: 0;
+}
+*{box-sizing: border-box;}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+ul,ol {
+	list-style: none;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+	color: #232323;
+}
+li{
+	list-style-type: none; 
+}
+body{
+	font-family: '微软雅黑';
+}
+/*以上是公用的css代码*/
+
+.top{
+	width: 100%;
+}
+.content{
+	padding-top: 7%;
+	/* padding-bottom: 10%; */
+	margin: 0 auto;
+	width: 94%;
+}
+.img_container{
+	display: flex;
+	justify-content:space-between ;
+position: relative;
+}
+.img_container>img{
+
+	width: 32.5%;
+	height: 100%;
+	/*display: flex; 设置100%，图片将保持等比例缩小放大。 */
+}
+.mess{
+	padding-top: 3%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between ;
+
+}
+.name{
+	font-size: 18px;
+	margin-left: 3%;
+	/* padding-left: 1%;
+	padding-right: 1%; */
+
+}
+.age,.job,.income,.distance{
+	color: #74A5FF;
+	font-size: 12px;
+	border-radius: 7px;
+	line-height: 15px;
+	/* 垂直居中要用line-height */
+	border: 1px solid #74A5FF;
+	padding: 2px;
+	flex-flow: 0;
+}
+.distance{
+	margin-left: 7%;
+}
+.distance>img{
+	height: 12px;
+}
+.urge{
+	margin-left: 3%;
+	color:#A2A2A2;
+}
+.btn{
+	width: 80%;
+	background: #E07DFD;
+	font-size: 18px;
+	border-radius: 17px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	margin-top: 3%;
+    line-height: 37px;
+
+}
+.online{
+	position: absolute;
+	left:-14px;
+	padding-top: 3%;
+	font-size: 13px;
+	color: #fff;
+	
+}
+.dot{
+	top: 0;
+	position: absolute;
+	left:-30px;
+	width: 0;
+	height: 0;
+
+	border-right: 30px solid transparent;
+	border-bottom:30px solid #F7448C ;
+	border-left: 30px solid transparent;
+}
+.online,.dot{
+	-webkit-transform-origin: top center ;
+	-webkit-transform:rotateZ(-45deg);
+}
+.bot{
+	/* position: absolute; */
+	width: 100%;
+}
+.bb{
+	position: relative;
+}
+.btn_go{
+	position: absolute;
+	left: 27.5%;
+	bottom: 22%;
+	width: 45%;
+	/* padding-top: 3.5%; */
+	font-size: 20px;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	background: #FF16AA;
+	text-align: center;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #fff;
+	box-shadow: 3px 3px 3px #94199A;
+}
